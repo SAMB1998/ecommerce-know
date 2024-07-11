@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.admin-card {
+  @apply bg-base-100 shadow-xl rounded p-8 flex flex-col gap-4 text-center font-bold justify-center items-center hover:bg-primary hover:text-white w-[400px] h-[200px];
+}
+
+@media (max-width: 768px) {
+  aside {
+    transform: translate(-100%, 0);
+  }
+  aside.show {
+    transform: translate(0, 0);
+    transition: transform 0.3s ease-in-out;
+  }
+}
